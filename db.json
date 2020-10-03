@@ -8,7 +8,7 @@
   "issuer": "https://cid.clasp-infra.com/adfs",
   "authorization_endpoint": "https://cid.clasp-infra.com/adfs/oauth2/authorize/",
   "token_endpoint": "https://cid.clasp-infra.com/adfs/oauth2/token/",
-  "jwks_uri": "https://my-json-server.typicode.com/amalpmanuel/demo/discoverykey",  
+  "jwks_uri": "https://cid.clasp-infra.com/adfs/discovery/keys",  
   "token_endpoint_auth_methods_supported": [
     "client_secret_post",
     "client_secret_basic",
@@ -89,21 +89,5 @@
   "frontchannel_logout_supported": true,
   "frontchannel_logout_session_supported": true,
   "device_authorization_endpoint": "https://cid.clasp-infra.com/adfs/oauth2/devicecode"
-} ,
-   "discoverykeys":{
-      "keys": [
-        {
-          "kty": "RSA",
-          "use": "sig",
-          "alg": "RS256",
-          "kid": "nfUt8aWPhgVDYz8cy82sAt27BDU",
-          "x5t": "nfUt8aWPhgVDYz8cy82sAt27BDU",
-          "n": "ldxvtQI_kuc1-xKxy76xVW47kPNY8AYXxJTGgMr9EIL0Y6WnS5Sp5QV36KjU3o9YAvVtKF8cGKmdkIQ-hMJMfoMFv7lXA_oqfIA5Vs2sm10ks-fzL_uQqZJmrieBUaYnHRWsT3WfuUiDzbriicUy_zbNNcvfVDm_WFl_AsoFCl1U6AsTkQ3BuI9-mJD-RvJaVhk07cT9N_VwC-cX02ZG64HKwLLYP8fJARLrBUr_03COg7THnh7sxfGYSQVLN5XnN7UUrxA-up0ZkzWlkLZNB_H3GkwowD7Q9B-ez27GnxAtr468aHMivNr6F7os1ZYInaC7UnnbikxxpXBpIrpTdQ",
-          "e": "AQAB",
-          "x5c": [
-            "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"
-          ]
-        }
-      ]
-    }
+}   
 }
