@@ -7,8 +7,7 @@
   "discoverydoc":{
   "issuer": "https://cid.clasp-infra.com/adfs",
   "authorization_endpoint": "https://cid.clasp-infra.com/adfs/oauth2/authorize/",
-  "token_endpoint": "https://cid.clasp-infra.com/adfs/oauth2/token/",
-  "jwks_uri": "https://cid.clasp-infra.com/adfs/discovery/keys",  
+  "token_endpoint": "https://cid.clasp-infra.com/adfs/oauth2/token/",  
   "token_endpoint_auth_methods_supported": [
     "client_secret_post",
     "client_secret_basic",
